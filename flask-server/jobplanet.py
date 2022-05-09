@@ -1,6 +1,8 @@
 from ast import Str
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 import requests
+import os
 
 
 def set_url(company_id):
@@ -11,10 +13,14 @@ def set_url(company_id):
 
 
 def login(session):
+    load_dotenv()
+    JOBPLANET_ID = os.environ.get('JOBPLANET_ID')
+    JOBPLANET_PW = os.environ.get('JOBPLANET_PW')
+
     url_login = "https://www.jobplanet.co.kr/users/sign_in?_nav=gb"
     login_info = {
-        "user[email]": "jwshin@fma-consulting.com",
-        "user[password]": "jobplanet2021"
+        "user[email]": JOBPLANET_ID,
+        "user[password]": JOBPLANET_PW
     }
     session.post(url_login, data=login_info)
     return session
