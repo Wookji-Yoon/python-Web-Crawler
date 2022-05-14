@@ -1,6 +1,6 @@
 export async function fetchAutoComplete(search: string) {
   const response = await fetch(
-    `https://www.jobplanet.co.kr/autocomplete/autocomplete/suggest.json?term=${search}`
+    `/autocomplete/autocomplete/suggest.json?term=${search}`
   );
   const json = await response.json();
   return json.companies;
