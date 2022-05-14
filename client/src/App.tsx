@@ -7,7 +7,6 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 ${reset}
-
 body {
   font-family: 'Noto Sans KR', sans-serif;}`;
 
