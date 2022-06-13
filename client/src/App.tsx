@@ -1,6 +1,6 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Home from "./routes/Home";
-import Reviews from "./routes/Reviews";
+import Home from "./pages/Home";
+import Reviews from "./pages/Reviews";
 import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components";
 

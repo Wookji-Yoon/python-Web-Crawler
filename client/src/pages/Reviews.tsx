@@ -2,8 +2,8 @@ import { useLocation } from "react-router";
 import { useRecoilValue } from "recoil";
 import styled, { keyframes } from "styled-components";
 import { pageAtom } from "../atoms";
-import Download from "./Download";
-import SelectPage from "./SelectPage";
+import Download from "../components/Download";
+import SelectPage from "../components/SelectPage";
 
 interface ILocation {
   state: {
